@@ -8,9 +8,10 @@ import Reveal from 'reveal.js'
 import RevealMarkdown from 'reveal.js/plugin/markdown/markdown.js'
 import RevealHighlight from 'reveal.js/plugin/highlight/highlight.esm'
 import RevealNotes from 'reveal.js/plugin/notes/notes.js'
+import RevealZoom from 'reveal.js/plugin/zoom/zoom.js'
 
 import './ogv.css'
 
 
 const deck = new Reveal()
-deck.initialize({ hash: true, slideNumber: true, plugins: [ RevealHighlight, RevealMarkdown, RevealNotes, ] })
+deck.initialize({ hash: true, slideNumber: true, plugins: [ RevealHighlight, RevealMarkdown, RevealNotes,RevealZoom, ] })
