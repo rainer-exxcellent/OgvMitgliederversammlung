@@ -1,4 +1,5 @@
 {
+  "managers": ["npm", "yarn"],
   "baseBranches": ["main"],
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
