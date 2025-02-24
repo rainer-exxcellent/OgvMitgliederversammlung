@@ -1,8 +1,28 @@
 {
-  "managers": ["npm", "yarn"],
-  "baseBranches": ["main"],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["group:allNonMajor"],
+  "baseBranches": ["main, development"],
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
+  "platformAutomerge": false,
   "automergeStrategy": "merge-commit",
-  "prHourlyLimit": 2
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 5,
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "groupName": "all (non-major) dependencies",
+      "groupSlug": "all-non-major",
+      "matchCurrentValue": "!/^v?0\\./"
+    }
+  ]
 }
