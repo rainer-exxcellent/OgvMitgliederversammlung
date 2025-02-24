@@ -19,3 +19,7 @@ jobs:
         uses: renovatebot/github-action@v41.0.13
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          # Repository taken from variable to keep configuration file generic
+          RENOVATE_REPOSITORIES: ${{ github.repository }}
+          LOG_LEVEL: DEBUG
