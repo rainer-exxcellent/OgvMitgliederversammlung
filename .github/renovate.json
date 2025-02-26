@@ -1,13 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["group:allNonMajor"],
+  "extends": ["group:allNonMajor", ":automergeDisabled"],
   "baseBranches": ["main", "development"],
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
   "platformAutomerge": false,
   "automergeStrategy": "merge-commit",
   "prHourlyLimit": 2,
-  "prConcurrentLimit": 5,
+  "prConcurrentLimit": 1,
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
