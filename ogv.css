@@ -26,3 +26,19 @@
     /*background-color: rgba(0,0,0,0.5)*/
 }
 
+.container{
+    display: flex;
+}
+
+.col{
+    flex: 1;
+}
+
+.small-image {
+
+    padding: 10px 20px 10px 20px;
+    right: 0px;
+    z-index:500;
+    width: 300px;
+    /*background-color: rgba(0,0,0,0.5)*/
+}
