@@ -8,6 +8,7 @@ export default {
                 main: resolve(__dirname, "index.html"),
                 versammlung2024: resolve(__dirname, "versammlung2024.html"),
                 versammlung2025: resolve(__dirname, "versammlung2025.html"),
+                versammlung2026: resolve(__dirname, "versammlung2026.html"),
             }
         },
     }
